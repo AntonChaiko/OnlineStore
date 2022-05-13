@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="ButtonRegisterStyle" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/ButtonRegisterShapeAppearance</item>
+    </style>
+
+    <style name="ButtonRegisterShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+    </style>
+
+    <style name="ButtonLoginStyle" parent="Widget.MaterialComponents.Button">
+
+        <item name="shapeAppearanceOverlay">@style/ButtonLoginShapeAppearance</item>
+
+    </style>
+
+    <style name="ButtonLoginShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+    </style>
+
+    <style name="FloatingActionButtonStyle">
+        <item name="backgroundTint">@color/main_button_color</item>
+        <item name="borderWidth">0dp</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="TextTitleMainStyle">
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/title_text_color</item>
+    </style>
+
+    <style name="MainTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/box_background_color</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="hintTextColor">@color/title_text_color</item>
+    </style>
+</resources>

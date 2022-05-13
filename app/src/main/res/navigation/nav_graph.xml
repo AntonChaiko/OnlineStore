@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authenticationFragment">
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.onlinestoreapp.ui.fragments.registerfragment.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/register_fragment">
+        <action
+            android:id="@+id/action_registerFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="com.example.onlinestoreapp.ui.fragments.authenticationfragment.LoginFragment"
+        android:label="AuthenticationFragment"
+        tools:layout="@layout/authentication_fragment">
+        <action
+            android:id="@+id/action_authenticationFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_authenticationFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_authenticationFragment_to_dashboardFragment2"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.onlinestoreapp.ui.fragments.dashboardfragment.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/dashboard_fragment"/>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.onlinestoreapp.ui.fragments.favoritesfragment.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/favorites_fragment"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.onlinestoreapp.ui.fragments.profilefragment.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/action_profileFragment_to_createProductFragment"
+            app:destination="@id/createProductFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/createProductFragment"
+        android:name="com.example.onlinestoreapp.ui.fragments.createproductfragment.CreateProductFragment"
+        android:label="CreateProductFragment"
+        tools:layout="@layout/create_product_fragment">
+        <action
+            android:id="@+id/action_createProductFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">OnlineStoreApp</string>
+    <string name="password_helper">Enter your password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="enter">Enter</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">logout</string>
+    <string name="profile">profile</string>
+    <string name="favorites">favorites</string>
+    <string name="dashboard">dashboard</string>
+    <string name="user_profile">Profile</string>
+    <string name="camera">camera</string>
+    <string name="first_name">First name</string>
+    <string name="second_name">Second name</string>
+    <string name="number">Phone number</string>
+    <string name="edit_user_data">edit user data</string>
+    <string name="product_name">Product name</string>
+    <string name="product_description">Product description</string>
+    <string name="add_product">Add product</string>
+    <string name="price">Price</string>
+</resources>
